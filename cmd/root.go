@@ -23,7 +23,8 @@ to quickly create a Cobra application.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("My test command one executed")
+		accountNo, _ := cmd.Flags().GetString("ac")
+		fmt.Println("My test command one executed. Account No:" + accountNo)
 	},
 }
 
