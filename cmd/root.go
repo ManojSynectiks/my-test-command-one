@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// rootCmd represents the base command when called without any subcommands
+// RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
 	Use:   "my-test-command-one",
 	Short: "A brief description of your application",
@@ -23,7 +23,7 @@ to quickly create a Cobra application.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("my test command one executed")
+		fmt.Println("My test command one executed")
 	},
 }
 
